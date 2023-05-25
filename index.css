@@ -1,0 +1,204 @@
+/*Inicializando tudo*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(247, 230, 133);
+}
+
+/*Cabeçalho da home (nome e opções)*/
+header{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 180, 40);
+}
+.content {
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 125px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    border-color: rgb(158, 103, 0);
+}
+#brand{
+    font-size: 40px;
+}
+nav ul{
+    display:flex;
+    flex-direction: row;       
+}
+nav li{
+    margin-right: 20px;
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+li:hover{
+    transition: 0.5s;
+    background-color: rgb(134, 88, 2);
+    color:white;
+}
+nav button{
+    padding: 8px 40px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+nav button:hover{
+    transition: 0.5s;
+    background-color: rgb(134, 88, 2);
+    color: white;
+    border-color: white;
+}
+/*Imagem e texto logo abaixo do display de opções*/
+.header-block{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 110%;
+    margin-left: 5%;
+    border-radius: 25px;
+    background-color: rgb(53, 53, 255);
+}
+.text{
+    margin-right: 70px;
+    width: 550px;
+
+}
+#ptexto{
+    text-indent: 50px;
+    margin-top: 10px;
+}
+#tijolos{
+    margin-top: 5%;
+    height: 80%;
+}
+section .catalogo{
+    width: 100vw;
+    padding: 100px;
+}
+section .filtro{
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    margin: 160px auto 50px auto;
+    background-color: rgb(167, 167, 167);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+section .filtro input{
+    width: 700px;
+    height: 50px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    text-indent: 10px;
+}
+section .filtro button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor:pointer;
+    background-color: rgb(53, 53, 255);
+    font-size: 1.2em;
+    transition: 0.3s ease;
+}
+section .filtro button:hover{
+    background-color: black;
+    color: rgb(53, 53, 255);
+}
+.titulo{
+    margin: 200px 0 -40px 5%;
+}
+/*Cartões de venda*/
+.areacards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+.itemcard{
+    background-color: white;
+    width: 330px;
+    height: 500px;
+    padding: 10px;
+    border: 3px groove black;
+    box-shadow: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 4%;
+    margin-bottom: 30px;
+}
+.itemcard:hover{
+    border-color: blue;
+    background-color: rgb(233, 167, 46);
+    transition: 0.3s;
+}
+.imagemcard{
+    min-height: 200px;
+    max-height: 320px;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+.conteudocard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.itemcard button{
+    margin-top: 10%;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 20px;
+    width: 180px;
+    height: 35px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.itemcard button:hover{
+    color:white;
+    background-color: blue;
+    height: 45px;
+    width: 200px;
+    transition: 0.3s;
+}
+.itemcard p{
+    margin-top: 2%;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.9);
+}
+/*Rodapé*/
+.rodape{
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+}
